@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ab3d6fb-973e-4a25-9948-a05fe1497dfb" name="Default Changelist" comment="1" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="5647b3eb-d4d1-4145-8ff5-264b965deb2f" />
+  <component name="ProjectId" id="1h2rtcEQdJb1Tjzy8xpRARrcEBt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="django_backend" type="Python.DjangoServer" factoryName="Django server">
+      <module name="django_backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django_backend.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ab3d6fb-973e-4a25-9948-a05fe1497dfb" name="Default Changelist" comment="" />
+      <created>1599220244522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599220244522</updated>
+      <workItem from="1599220255933" duration="6549000" />
+      <workItem from="1599235327099" duration="894000" />
+      <workItem from="1599471417046" duration="16123000" />
+      <workItem from="1599556542052" duration="1459000" />
+      <workItem from="1599558097158" duration="16000" />
+      <workItem from="1599558274851" duration="68000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="29" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599556592170">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="278" y="29" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.736@0.0.1366.736" timestamp="1599556592170" />
+    <state x="491" y="87" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1599484505838">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="491" y="87" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.0.1366.736@0.0.1366.736" timestamp="1599484505838" />
+    <state x="222" y="0" width="912" height="736" key="CommitChangelistDialog2" timestamp="1599489163038">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="222" y="0" width="912" height="736" key="CommitChangelistDialog2/0.0.1366.736@0.0.1366.736" timestamp="1599489163038" />
+    <state x="466" y="126" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599224887359">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="466" y="126" width="424" height="491" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1599224887359" />
+    <state x="515" y="268" width="336" height="207" key="Github.ShareDialog" timestamp="1599489099245">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="515" y="268" width="336" height="207" key="Github.ShareDialog/0.0.1366.736@0.0.1366.736" timestamp="1599489099245" />
+    <state x="467" y="48" width="422" height="647" key="Github.UntrackedFilesDialog" timestamp="1599489116429">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="467" y="48" width="422" height="647" key="Github.UntrackedFilesDialog/0.0.1366.736@0.0.1366.736" timestamp="1599489116429" />
+    <state width="1320" height="171" key="GridCell.Tab.0.bottom" timestamp="1599558003124">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1320" height="171" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1599558003124" />
+    <state width="1320" height="171" key="GridCell.Tab.0.center" timestamp="1599558003123">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1320" height="171" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1599558003123" />
+    <state width="1320" height="171" key="GridCell.Tab.0.left" timestamp="1599558003123">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1320" height="171" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1599558003123" />
+    <state width="1320" height="171" key="GridCell.Tab.0.right" timestamp="1599558003123">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1320" height="171" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1599558003123" />
+    <state x="172" y="0" width="1022" height="736" key="SettingsEditor" timestamp="1599489195308">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="172" y="0" width="1022" height="736" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1599489195308" />
+    <state x="568" y="257" width="367" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1599227524468">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="568" y="257" width="367" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.736@0.0.1366.736" timestamp="1599227524468" />
+    <state x="464" y="283" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599489142348">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="464" y="283" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.736@0.0.1366.736" timestamp="1599489142348" />
+  </component>
+</project>
