@@ -27,6 +27,8 @@ class ProductSerializer(serializers.ModelSerializer):
             'img',
             'price',
             'quantity',
+            'title',
+            'description',
             'brand',
             'color'
         ]
@@ -44,6 +46,8 @@ class ProductChangeSerializer(serializers.ModelSerializer):
             'img',
             'price',
             'quantity',
+            'title',
+            'description',
             'brand',
             'color'
         ]
