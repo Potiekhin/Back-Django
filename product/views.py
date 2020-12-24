@@ -1,7 +1,8 @@
 from rest_framework.views import APIView
 
 from .models import ProductModel, BrandModel, ColorModel
-from .serializers import ProductSerializer, ProductChangeSerializer, BrandSerializer, ColorSerializer
+from .serializers import ProductSerializer, ProductChangeSerializer, BrandSerializer, ColorSerializer, \
+    ProductCartSerializer
 from rest_framework.response import Response
 
 
@@ -131,3 +132,22 @@ class GetProductView(APIView):
         pk = kwargs.get('pk')
         product = ProductModel.objects.filter(id=pk)
         return Response(ProductSerializer(product, many=True).data)
+
+
+class ProductCartView(APIView):
+    serializer_class = ProductCartSerializer
+
+    def post(self, *args):
+        data = self.request.data
+
+        print(data)
+        serializer = ProductCartSerializer(data=data)
+
+        serializer.is_valid(raise_exception=True)
+
+        serializer.save()
+        return Response(serializer.data)
+
+    def get(self, *args):
+        user_id = int(self.request.data['user_id'])
+        return Response(user_id)

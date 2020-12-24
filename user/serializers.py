@@ -30,3 +30,9 @@ class GetUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserModel
         fields = ('is_superuser',)
+
+
+class GetUserIdSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserModel
+        fields = ['id']
