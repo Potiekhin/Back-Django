@@ -38,12 +38,3 @@ class ProductModel(models.Model):
 
     brand = models.ForeignKey(BrandModel, on_delete=models.SET_NULL, null=True)
     color = models.ForeignKey(ColorModel, on_delete=models.SET_NULL, null=True)
-
-
-class ProductCartModel(models.Model):
-    class Meta:
-        db_table = 'cart'
-
-    user = models.ForeignKey(UserModel, on_delete=models.CASCADE)
-    date = models.DateField(auto_now_add=True, null=True)
-    product = models.ManyToManyField(ProductModel, related_name='cart_product')

@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'user',
     'categories',
-    'product'
+    'product',
+    'order'
 ]
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',

@@ -9,4 +9,5 @@ urlpatterns = [
                   path('token/refresh/', TokenRefreshView.as_view()),
                   path('categories/', include('categories.urls')),
                   path('product/', include('product.urls')),
+                  path('cart/', include('order.urls')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

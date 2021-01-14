@@ -16,12 +16,6 @@ class UserView(ListCreateAPIView):
     queryset = UserModel.objects.all()
 
 
-# class GetUserView(APIView):
-#     def get(self, request):
-#         user = GetUserSerializer(request.user).data
-#         return Response(user)
-
-
 class GetUserDataView(APIView):
     def get(self, request):
         user = UserSerializer(request.user).data
