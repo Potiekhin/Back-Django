@@ -3,24 +3,35 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 from order.models import CartModel
-from order.serializers import CartSerializer
+from order.serializers import CartSerializer, CartProductSerializer
 
 
 class CartView(APIView):
     serializer_class = CartSerializer
 
-    def post(self, *args):
-        serializer = CartSerializer(data=self.request.data, partial=True)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data, status.HTTP_201_CREATED)
+    def post(self, *args, **kwargs):
+        pk = kwargs.get('pk')
+        data = self.request.data
+        if type(data) is list:
+            for item in data:
+                item2 = {'user': pk, "quantity": item['quantity'], "product": item['product']['id']}
+                serializer = CartSerializer(data=item2, partial=True)
+                serializer.is_valid(raise_exception=True)
+                serializer.save()
+            return Response(data, status.HTTP_201_CREATED)
+        else:
+            data['user'] = pk
+            serializer = CartSerializer(data=data, partial=True)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            return Response(serializer.data, status.HTTP_201_CREATED)
 
-    def get(self, *args):
-        user = self.request.data.get('user')
+    def get(self, *args, **kwargs):
+        user = kwargs.get('pk')
         cart = CartModel.objects.filter(user=user)
         if not cart:
             return Response({'msg': 'user not found'})
-        return Response(CartSerializer(cart, many=True).data, status.HTTP_200_OK)
+        return Response(CartProductSerializer(cart, many=True).data, status.HTTP_200_OK)
 
 
 class EditCartView(APIView):

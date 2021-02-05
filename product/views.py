@@ -1,12 +1,18 @@
 from rest_framework.views import APIView
-
 from .models import ProductModel, BrandModel, ColorModel
 from .serializers import ProductSerializer, ProductChangeSerializer, BrandSerializer, ColorSerializer
 from rest_framework.response import Response
+from rest_framework.permissions import IsAdminUser, AllowAny
 
 
 class BrandView(APIView):
     serializer_class = BrandSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'POST':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def get(self, request):
         brand = BrandModel.objects.all()
@@ -22,6 +28,12 @@ class BrandView(APIView):
 
 class ColorView(APIView):
     serializer_class = ColorSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'POST':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def get(self, request):
         color = ColorModel.objects.all()
@@ -37,6 +49,12 @@ class ColorView(APIView):
 
 class EditBrandView(APIView):
     serializer_class = BrandSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'PUT' or self.request.method == 'DELETE':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def put(self, *args, **kwargs):
         pk = kwargs.get('pk')
@@ -62,6 +80,12 @@ class EditBrandView(APIView):
 
 class EditColorView(APIView):
     serializer_class = ColorSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'PUT' or self.request.method == 'DELETE':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def put(self, *args, **kwargs):
         pk = kwargs.get('pk')
@@ -87,6 +111,12 @@ class EditColorView(APIView):
 
 class ProductView(APIView):
     serializer_class = ProductSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'POST':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def post(self, *args, **kwargs):
         pk = kwargs.get('pk')
@@ -107,6 +137,12 @@ class ProductView(APIView):
 
 class ChangeProductView(APIView):
     serializer_class = ProductSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'PUT' or self.request.method == 'DELETE':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def put(self, *args, **kwargs):
         pk = kwargs.get('pk')

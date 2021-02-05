@@ -1,5 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.permissions import IsAdminUser, AllowAny, IsAuthenticated
 
 from categories.models import ProductCategoriesModel, SubProductCategoriesModel
 from categories.serializers import ProductCategoriesSerializer, ProductSubCategoriesSerializer
@@ -7,6 +8,12 @@ from categories.serializers import ProductCategoriesSerializer, ProductSubCatego
 
 class ProductCategoriesView(APIView):
     serializer_class = ProductCategoriesSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'POST':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def get(self, request):
         category = ProductCategoriesModel.objects.all()
@@ -22,6 +29,12 @@ class ProductCategoriesView(APIView):
 
 class EditProductCategoriesView(APIView):
     serializer_class = ProductCategoriesSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'PUT' or self.request.method == 'DELETE':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def put(self, *args, **kwargs):
         pk = kwargs.get('pk')
@@ -47,6 +60,12 @@ class EditProductCategoriesView(APIView):
 
 class ProductSubCategoriesView(APIView):
     serializer_class = ProductSubCategoriesSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'POST':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def get(self, *args, **kwargs):
         pk = kwargs.get('pk')
@@ -64,6 +83,12 @@ class ProductSubCategoriesView(APIView):
 
 class EditSubProductCategoriesView(APIView):
     serializer_class = ProductSubCategoriesSerializer
+    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.request.method == 'PUT' or self.request.method == 'DELETE':
+            return [IsAdminUser()]
+        return super().get_permissions()
 
     def put(self, *args, **kwargs):
         pk = kwargs.get('pk')
